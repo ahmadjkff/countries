@@ -6,7 +6,7 @@ function LandPage() {
   const [countries, setCountries] = useState([]);
 
   return (
-    <div className="bg-Grey-50 py-10 px-40 dark:bg-Blue-950">
+    <div className="bg-Grey-50 py-10 xs:px-10 lg:px-40 dark:bg-Blue-950">
       <LandPageHeader setCountries={setCountries} />
       <Cards countries={countries} />
     </div>

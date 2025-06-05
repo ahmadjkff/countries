@@ -27,7 +27,7 @@ const CountryDetails = () => {
   if (!country) return <>Loading</>;
 
   return (
-    <div className="py-20 px-40 dark:bg-Blue-950 dark:text-White">
+    <div className=" dark:bg-Blue-950 dark:text-White xs:py-10 xs:px-10 lg:py-20 lg:px-40">
       <Link
         to={".."}
         className="relative px-14 py-1.5 border border-Grey-400 rounded-md shadow-xl dark:border-Blue-900"
@@ -41,15 +41,17 @@ const CountryDetails = () => {
         Back
       </Link>
 
-      <div className="flex py-20 gap-40">
+      <div className="flex xs:flex-col xs:py-10 xs:gap-5 lg:flex-row lg:py-20 lg:gap-40 ">
         <img
           src={country.flags.png}
           alt={country.flags.alt}
-          className="w-[600px] min-h-[400px]"
+          className="xs:w-full xs:h-[250px] lg:w-[600px] lg:min-h-[400px]"
         />
-        <div className="pt-10">
-          <h2 className="text-3xl font-extrabold">{country.name.common}</h2>
-          <div className="flex pt-20 gap-10">
+        <div>
+          <h2 className="text-3xl font-extrabold pt-10">
+            {country.name.common}
+          </h2>
+          <div className="flex gap-10 xs:flex-col xs:py-8 lg:pt-20 lg:flex-row">
             <div className="flex flex-col gap-2 w-60">
               <p className="font-semibold">
                 Population:

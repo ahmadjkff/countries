@@ -6,7 +6,7 @@ type CardsProps = {
 
 const Cards = ({ countries }: CardsProps) => {
   return (
-    <div className="flex gap-8 py-10 flex-wrap">
+    <div className="flex gap-8 py-10 flex-wrap sm:flex-col md:flex-row items-center justify-center">
       {countries?.map((c) => (
         <Card
           key={c.flag}

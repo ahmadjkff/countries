@@ -20,8 +20,8 @@ function Header() {
     document.documentElement.classList.toggle("dark", newTheme === "dark");
   };
   return (
-    <div className="flex items-center py-7 border-b border-Grey-400 px-40 dark:bg-Blue-900 dark:border-Blue-950 transition-colors">
-      <h1 className="font-extrabold text-xl dark:text-white">
+    <div className="flex items-center py-7 border-b border-Grey-400 dark:bg-Blue-900 dark:border-Blue-950 transition-colors xs:px-10 lg:px-40">
+      <h1 className="font-extrabold dark:text-white xs:text-sm lg:text-xl">
         Where in the world?
       </h1>
 

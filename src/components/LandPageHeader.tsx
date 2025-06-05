@@ -36,8 +36,8 @@ const LandPageHeader = ({ setCountries }: LandPageHeaderProps) => {
   }, [search]);
 
   return (
-    <div className="flex justify-between items-center ">
-      <div className="relative">
+    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0 w-full">
+      <div className="relative w-full sm:w-auto">
         <img
           src={searchIcon}
           alt="search icon"
@@ -47,7 +47,7 @@ const LandPageHeader = ({ setCountries }: LandPageHeaderProps) => {
         <input
           type="text"
           placeholder="Search for a country"
-          className="w-[30rem] pl-18 py-3 border-Grey-50 border rounded-md shadow-2xl dark:bg-Blue-900 dark:text-White dark:border-Blue-900"
+          className="w-full sm:w-[30rem] pl-12 py-3 border-Grey-50 border rounded-md shadow-2xl dark:bg-Blue-900 dark:text-White dark:border-Blue-900"
           onChange={(e) => handleSearch(e)}
         />
       </div>
