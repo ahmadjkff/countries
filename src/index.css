@@ -11,7 +11,7 @@
   /* --font-nunito: "Nunito Sans", "sans-serif"; */
   --default-font-family: "Nunito Sans";
 
-  --breakpoint-xs: 420px;
+  --breakpoint-xs: 350px;
 }
 @custom-variant dark (&:where(.dark, .dark *));
 
